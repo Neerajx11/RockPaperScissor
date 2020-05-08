@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding:  0 ;
+    box-sizing: border-box;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+
+body{
+    background-image:linear-gradient(to right,#fb00ff,#00dade);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 4px #cccccc;
+    padding: 1%;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.white-bg{
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.player-1, .player-2{
+    width: 50%;
+}
+
+.player-head1,.player-head2{
+    font-size: 35px;
+    margin: 5% auto;
+}
+
+.hand{
+    height: 280px;
+}
+img{
+    width: 30%;
+    margin: 4% auto;
+}
+
+.img-1{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.score{
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.player-1-options img, .player-2-options img{
+    width: 40px;
+    padding: 3px 8px;
+}
+
+.score-player-head{
+    font-size: 20px;
+}
+
+.res-img{
+    width: 12px;
+    position: relative;
+    top: 4.8px;
+    left: 6px;
+}
+
+.restart{
+    cursor: pointer;
+}
+
+/* Score */
+
+#score li{
+    font-size: 30px;
+    padding: 4px;
+}
+
