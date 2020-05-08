@@ -7,17 +7,19 @@
 }
 
 body{
-    background-image:linear-gradient(to right,#fb00ff,#00dade);
+    background-image:linear-gradient(to right,#ff0095,#fb00ff,#00dade);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    min-height: 100vh;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
+    color: rgb(54, 62, 70);
     text-shadow: 2px 4px #cccccc;
-    padding: 1%;
+    padding: 0.8%;
 }
 
 li{
@@ -30,13 +32,13 @@ li{
 }
 
 .white-bg{
-    background-color: rgba(255, 255, 255, 0.815);
+    background-color: #ffffffde;
     border-radius: 4px;
     margin: 20px;
 }
 
 .player-1, .player-2{
-    width: 50%;
+    width: 40%;
 }
 
 .player-head1,.player-head2{
@@ -44,11 +46,14 @@ li{
     margin: 5% auto;
 }
 
+
+/* Mid Body */
 .hand{
-    height: 280px;
+    height: 250px;
 }
+
 img{
-    width: 30%;
+    width: 25%;
     margin: 4% auto;
 }
 
@@ -57,6 +62,24 @@ img{
     transform: scaleX(-1);
 }
 
+.pp1{
+    color: #ff0080;
+    text-shadow: 1px 1px #cc0000;
+    font-weight: 600;
+}
+
+.pp2{
+    color: #00dade;
+    text-shadow: 1px 1px #0066ff;
+    font-weight: 600;
+}
+
+.pps{
+    color: #fb00ff;
+    text-shadow: 1px 2px #a501ce;
+}
+
+/* Score Tab */
 .score{
     display: flex;
     justify-content: space-around;
@@ -90,3 +113,36 @@ img{
     padding: 4px;
 }
 
+/* ================== */
+/* RESPONSIVE */
+/* =============== */
+
+@media(max-width:1100px){
+    .hand{
+        height: 150px;
+    }
+
+}
+@media(max-width:700px){
+
+    .hand{
+        height: 90px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .pps{
+        align-self: center;
+    }
+    .sev{
+        display: flex;
+        flex-direction: column;
+    }
+    .player-head1,.player-head2{
+        font-size: 15px;
+    }
+    #score li{
+        font-size: 15px;
+    }
+
+}

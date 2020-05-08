@@ -108,11 +108,11 @@ console.log(document.addEventListener('keypress',function(e){
     // console.log(scorep1, scorep2);
     if(scorep1>=winningPoints||scorep2>=5){
         if((scorep1>=winningPoints) && (scorep2<winningPoints)){
-            document.querySelector('.player-head1').textContent = "Winner";
+            document.querySelector('.player-head1').textContent = "Winner ✨";
             win.play();
         }
         else if((scorep2>=winningPoints) && (scorep1<winningPoints)){
-            document.querySelector('.player-head2').textContent = "Winner";
+            document.querySelector('.player-head2').textContent = "Winner ✨";
             win.play();
         }
         else if((scorep2==winningPoints) && (scorep1==winningPoints)){
@@ -129,7 +129,7 @@ console.log(document.addEventListener('keypress',function(e){
 }));
 
 
-console.log(winningPoints, scorep2, scorep1);
+// console.log(winningPoints, scorep2, scorep1);
 
 
 
